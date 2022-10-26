@@ -2,15 +2,23 @@
 
   <style>
     #main-container {
+      position: relative;
       background-color: #FFFFFF;
       font-family: Arial;
-      position: relative;
     }
 
     #Main_content {
-      border: 2px black solid;
-      width: 75%;
-      margin-left: 50px;
+      border: 0px black solid;
+      flex: left;
+ 
+      margin-left: 20px;
+    }
+
+    .Main_content1 {
+      border: 0px black solid;
+      flex: left;
+           width: 75%;
+      margin-left: 20px;
     }
 
     #Photo {
@@ -25,8 +33,9 @@
     #title {
       padding: 0px;
       font-family: "Times New Roman";
-      font-size: 120%;
+      font-size: 130%;
       color: darkred;
+      background-color: #EdEaE0;
 
     }
 
@@ -34,32 +43,42 @@
       background-color: #5D001E;
     }
 
-
-    #menu {
-      position: -webkit-sticky;
-      position: sticky;
-      top: 20;
-      right: 0;
+    #parent {
+      position: relative;
     }
 
+    #menu {
+      font-size: 20px;
+      width: 25%;
+      right: 0;
+      margin-left: 75%;
+      position: sticky;
+      flex: left;
+      top: 0;
+    }
 
     .menu-item {
-      margin: 20px 0px 00px 0px;
+      margin: 10px 0px 10px 0px;
       background-color: #EdEaE0;
+      border: 6px solid #ba905d;
+      padding: 5px 10px 5px 10px;
       color: #6F2232;
-      font-size: 20px;
+
+      border-radius: 15px;
     }
 
     .title {
-      background-color: white;
+      background-color: #EdEaE0;
+    }
+
+    ul {
+      list-style-type: none;
     }
 
     a:link {
       color: black;
       text-decoration: none ! important;
     }
-
-
 
     a:visited {
       color: black;
@@ -90,163 +109,183 @@
       </div>
 
       <div id="dash1"> . </div>
-
-      <div>
-        <ul id="menu">
-          <li class="menu-item"> <a href="#Education">Education </a> </li>
-          <li class="menu-item"> <a href="#Certifications"> Certifications </a></li>
-          <li class="menu-item"> <a href="#Employment History">Employment History </a> </li>
-          <li class="menu-item"> <a href="#Experiences"> Experiences </a> </li>
-          <li class="menu-item"> <a href="#accolades"> Accolades </a> </li>
-          <li class="menu-item"> <a href="index1.html"> Sample Page </a></li>
-        </ul>
-      </div>
-      <div id="Main_content">
+      <div id="parent">
 
 
-        <div class="content" section id="Education">
-          <div class="title">
-            <h3> Education: </h3>
+        <div id="menu">
+          <ul>
+            <li class="menu-item"> <a href="#Education">Education </a> </li>
+            <li class="menu-item"> <a href="#Certifications"> Skills </a></li>
+            <li class="menu-item"> <a href="#Employment History">Employments </a> </li>
+            <li class="menu-item"> <a href="#Experiences"> Experiences </a> </li>
+            <li class="menu-item"> <a href="#accolades"> Accolades </a> </li>
+            <li class="menu-item"> <a href="index1.html"> Sample Page </a></li>
+          </ul>
+        </div>
+
+        <div id="Main_content">
+
+
+          <div class="content" section id="Education">
+            <div class="title">
+              <h3> Education: </h3>
+            </div>
+
+            <div class="Main_content1">
+              <p> Bachelors of Science in Nursing (B.Sc in Nursing) </p>
+              <div class="Main_content1">
+                <p> <b> University: </b> <a href="https://www.winona.edu/" target="_blank"> Winona State University </a> </p>
+                <p> <b>Completion date: </b> December 2011</p>
+                <p> <b>GPA:</b> 3.45</p>
+              </div>
+            </div>
+
           </div>
-          <p> Bachelors of Science in Nursing (B.Sc in Nursing) </p>
-          <p> <b> University: </b> <a href="https://www.winona.edu/" target="_blank"> Winona State University </a> </p>
-          <p> <b>Completion date: </b> December 2011</p>
-          <p> <b>GPA:</b> 3.45</p>
 
-
-        </div>
-
-        <div class="content" section id="Certifications">
-          <div class="title">
-            <h3> Skills: </h3>
+          <div class="content" section id="Certifications">
+            <div class="title">
+              <h3> Skills: </h3>
+            </div>
+            <div class="Main_content1">
+              <b>Proficient Hard skills: </b> Electronic Medical Systems: Epic, Next-Gen, Tru Charts, and AHLTA <br><br>
+              <b>Basic Hard Skills: </b> Cerner, CHCS, MS-office suite, Lucid Charts, HTML, CSS, Javascript, and Oasis.
+              <br><br>
+              <b>Soft skills:</b>Nursing, Acute Inpatient Care, Medical documentation, Excellent oral and written communication, Discharge Planning, leadership, Teaching, Education
+            </div>
           </div>
-          <b>Proficient Hard skills </b> Electronic Medical Systems: Epic, Cerner, and AHLTA, Basic knowledge of CHCS and Oasis.
-          <br>
-          <b>Soft skills:</b>Nursing, Acute Inpatient Care, Medical documentation, Excellent oral and written communication, Discharge Planning, leadership, Teaching, Education
 
-        </div>
+          <div section id="Employment History" class="content">
+            <div class="title">
+              <h3> Employment history: </h3>
+            </div>
 
-        <div section id="Employment History" class="content">
-          <div class="title">
-            <h3> Employment history: </h3>
+            <div class="Main_content1">
+              <b> San Yisidro PACE: Admission Nurse </b> (05/2022 to current) <br>
+              <p> An all-inclusive health plan for geratric population. </p>
+              <p>
+                For more information on San Diego PACE program, please click <a href="https://www.syhc.org/sdpace/" target="_blank"> here </a>
+              </p>
+              <br>
+
+              <b> Datdaruni High School: English Teacher </b> (03/2020 to current) <br>
+              <p> A small all-girls high school nested in heart of a small town in Thailand. Serves 3000 students aged 12-18. Students are very ambitious, fiercely competative, creative, polite, respectful, and very kind. </p>
+              <br>
+              <b> Independent: Nursing Tutor</b> (03/2020 to 01/2022)
+              <p> Tutored indpendently remotely via Zoom, facebook messanger, and google suite. </p>
+              <br>
+              <b> Advantage Staffing Agency, RN, BSN (Temporary contract) </b> (10/2019 to 02/2020)
+              <p> Travel nursing agency based on Boca Raton, Florida. </p>
+              <br>
+              <b> Fresenius Medical Care, RN, BSN (Temporary contract)</b> (01/2019 to 08/2019)
+              <p>Largest dialysis care provided located all over the United States.</p>
+              <br>
+              <b> Providence St. Peter Hospital, RN, BSN </b> (12/ 2017 to 01/2019)
+              <p> A medium sized hospital based on Olympia, Washington. It had the kindest and most professional healthcare team I ever worked with. </p>
+              <br>
+              <b> United States Army, RN, BSN, OTA (multiple roles assigned)</b> (11/2013 to 11/2017)
+              <p> Proudly served the national alongside the most professional soldiers and hardest working health professionals who dedicated their selfless service all across the world.</p>
+              <br>
+              <b> Gundersen Lutheran Hospital, RN, BSN </b> (05/2012 to 11/2013)
+              <p> Dedicated to their caritas model of serving, this is another hospital with kindest and gentle hearted nurses in the world. </p>
+              <br>
+            </div>
           </div>
-          <li> <b> San Yisidro PACE </b> (05/2022 to current) </li>
-          <p> An all-inclusive health plan for geratric population. </p>
-          <p>
-            For more information on San Diego PACE program, please click <a href="https://www.syhc.org/sdpace/" target="_blank"> here </a>
-          </p>
+
+          <div section id="Experiences" class="title">
+
+            <h3> Relevant Experiences: </h3>
+            </div>
+            
+              <b> Admission Registered Nurse </b>(02/2012 to 01/2020) Multiple Agencies/Medical facilities, USA 
+              
+              <li> Reviewed medical documentations to abstract data pertinent to current care plan. </li>
+              <li> Perfomed admission interview with patient via telehealth platform</li>
+              <li> Utilized nursing judgement to collect pertinent health data through patient interview</li>
+              <li> Documented care in Electronic Medical Record (EMR) systems including True Chart. </li>
+              <li> Communicated with team of multidisciplinary providers to ensure safe patient discharge planning.</li>
+              <li> Assumed team role to decide if assessment needs to be deferred for safety </li>
+              <br>
+            
+            <b>Registered Nurse </b>(02/2012 to 01/2020) Multiple Agencies/Medical facilities, USA
+              <li> Administered nursing care to patients in multiple acute hospital units. </li>
+              <li> Documented care in Electronic Medical Record (EMR) systems including Epic, Cerner, and AHLTA. </li>
+              <li> Reviewed medical documentations to abstract data pertinent to current care plan. </li>
+              <li>reported significant data to appropriate provider.</li>
+              <li> Communicated with team of multidisciplinary providers to ensure safe patient discharge planning.</li>
+              <li> Communicated with Managed care facilities to assess readiness of the facility for safe discharge.</li>
+              <li> Assumed charge nurse role to manage patients overflow from Emergency care department. </li>
+              <br>
+
+            <b>Nursing Tutor </b>(02/2020 to current) Independent, USA
+            <li>Independently tutored nursing students pursing their MSN. </li>
+            <li> Proofread and recommend corrections to SOAP documentation notes. </li>
+
+            <br>
+            <br>
+          </div>
+
+          <div class="title">
+            <h3> Additional Experiences: </h3>
+            </div>
+<div class="Main_content1">
+            <br>
+
+            <b>Academic English Reading and Writing Teacher </b> (07/2020 – Current) Datdaruni High School
+            <li> Planned detailed lesson to teach Academic reading and writing skills to high school level students.</li>
+            <li> Designed tools to assess students’ knowledge acquisition through verbal or written tests.</li>
+            <li> Assessed students’ psychological and physical need and collaborated with staff to meet the needs. </li>
+
+            <br>
+
+            <b>Occupational Therapy Assistant </b>(11/2013 – 11/2017) United States Army, USA
+            <li> Assisted in rehabilitation of patients with chronic injuries by educating patients, assessing progress, and making evidence-based recommendations.</li>
+            <li> Documented care provided using AHLTA and CHCS EMR system.</li>
+            <li> Determined appropriate billing code for care provided and billed the patients accurately.</li>
+
+            <br>
+
+            <b>Iron Reset Program assisting director</b> (09/2016 – 06/2017) United States Army, USA
+            <li> Developed a forty-hour course to teach effective communication, stress management, anger management, conflict management, and time management skills to United States Army Soldiers. </li>
+            <li> Developed operational policies pertaining to operation of small-scale behavioral health clinic.</li>
+            <li> Outreached to commanding officers, resulting in 150% increase in student recruitment. </li>
+            <li> Performed intake assessment of new patients. </li>
+
+            <br>
+
+            <b>Unit Administrative Clerk</b> (08/2015 – 11/2017) United States Army
+            <li> Performed record keeping, organization, preservation and distribution of sensitive documents that included financial, personal, and medical information pertaining to federal military officials. </li>
+
+            <br>
+
+            <b>ASIST instructor </b>(02/2016 – 02/2018) United States Army, USA
+            <li> Organized and supervised Applied Suicide Intervention Skills Training (ASIST) workshop, resulting in over 121 medical professionals being certified in suicide first-aid skills. </li>
+          </div>
+          <br>
           <br>
 
-          <li> <b> Datdaruni High School </b> (03/2020 to current) </li>
-          <p> A small all-girls high school nested in heart of a small town in Thailand. Serves 3000 students aged 12-18. Students are very ambitious, fiercely competative, creative, polite, respectful, and very kind. </p>
-          <br>
-          <li><b> Nursing Tutor, Independent, USA </b> (03/2020 to current) </li>
-          <p> Tutored indpendently remotely via Zoom, facebook messanger, and google suite. </p>
-          <br>
-          <li> <b> Advantage Staffing Agency, RN, BSN (Temporary contract) </b> (10/2019 to 02/2020) </li>
-          <p> Travel nursing agency based on Boca Raton, Florida. </p>
-          <br>
-          <li><b> Fresenius Medical Care, RN, BSN (Temporary contract)</b> (01/2019 to 08/2019)
-            <p>Largest dialysis care provided located all over the United States.</p>
-          </li>
-          <br>
-          <li> <b> Providence St. Peter Hospital, RN, BSN </b> (12/ 2017 to 01/2019) </li>
-          <p> A medium sized hospital based on Olympia, Washington. It had the kindest and most professional healthcare team I ever worked with. </p>
-          <br>
-          <li><b> United States Army, RN, BSN, OTA (multiple roles assigned)</b> (11/2013 to 11/2017) </li>
-          <p> Proudly served the national alongside the most professional soldiers and hardest working health professionals who dedicated their selfless service all across the world.</p>
-          <br>
-          <li> <b> Gundersen Lutheran Hospital, RN, BSN </b> (05/2012 to 11/2013) </li>
-          <p> Dedicated to their caritas model of serving, this is another hospital with kindest and gentle hearted nurses in the world. </p>
-          <br>
+          <div class="title" section id="accolades">
+            <h3> Accolades: </h3> 
+            
+          </div>
+      
+            <div class="Main_content1">
 
-        </div>
+            <p> <b>Military Education and Training Campus (METC)</b>, Joint Base San Antonio, Texas </p>
+            <li> Distinguished Peers award (August 2014) </li>
+            <li> Distinguished Honor Graduate Award (August 2014) </li>
 
-        <div section id="Experiences" class="content">
+            <br>
 
-          <h3> Relevant Experiences: </h3>
+            <b> United State Army</b>, Joint Base Lewis-McChord, Washington
+            <li> Certificate of Achievement (August 2015) </li>
+            <li> Army Achievement Medal (May 2017) </li>
+            <li> Army Commendation Medal (November, 2017) </li>
 
+</div>
+          </div>
 
-
-          <ul><b>Registered Nurse </b>(02/2012 to 01/2020) Multiple Agencies/Medical facilities, USA </ul>
-          <li>Administered nursing care to patients in acute hospital units. </li>
-          <li> Documented care in Electronic Medical Record (EMR) systems including Epic, Cerner, and AHLTA. </li>
-          <li> Ensured documentation standards set by Joint commission, health departments, and the medical facility are met every shift, as evidence by above 90% accuracy in internal audits. </li>
-          <li> Reviewed medical documentations to abstract data pertinent to current care plan. </li>
-          <li> Performed admission assessment, gather clinical data, utilized nursing judgement to determine if data is significant, and reported significant data to appropriate provider.</li>
-          <li> Communicated with team of multidisciplinary providers to ensure safe patient discharge planning.</li>
-          <li> Communicated with Managed care facilities to assess readiness of the facility for safe discharge.</li>
-          <li> Assumed charge nurse role to manage patients overflow from Emergency care department. </li>
-
-
-          <br>
-
-
-          <b>Nursing Tutor </b>(02/2020 to current) Independent, USA
-          <li>Independently tutored nursing students pursing their MSN. </li>
-          <li> Proofread and recommend corrections to SOAP documentation notes. </li>
-
-          <br>
-          <br>
-        </div>
-
-        <div class="content">
-          <h3> Additional Experiences: </h3>
-
-          <br>
-
-          <b>Academic English Reading and Writing Teacher </b> (07/2020 – Current) Datdaruni High School
-          <li> Planned detailed lesson to teach Academic reading and writing skills to high school level students.</li>
-          <li> Designed tools to assess students’ knowledge acquisition through verbal or written tests.</li>
-          <li> Assessed students’ psychological and physical need and collaborated with staff to meet the needs. </li>
-
-          <br>
-
-          <b>Occupational Therapy Assistant </b>(11/2013 – 11/2017) United States Army, USA
-          <li> Assisted in rehabilitation of patients with chronic injuries by educating patients, assessing progress, and making evidence-based recommendations.</li>
-          <li> Documented care provided using AHLTA and CHCS EMR system.</li>
-          <li> Determined appropriate billing code for care provided and billed the patients accurately.</li>
-
-          <br>
-
-          <b>Iron Reset Program assisting director</b> (09/2016 – 06/2017) United States Army, USA
-          <li> Developed a forty-hour course to teach effective communication, stress management, anger management, conflict management, and time management skills to United States Army Soldiers. </li>
-          <li> Developed operational policies pertaining to operation of small-scale behavioral health clinic.</li>
-          <li> Outreached to commanding officers, resulting in 150% increase in student recruitment. </li>
-          <li> Performed intake assessment of new patients. </li>
-
-          <br>
-
-          <b>Unit Administrative Clerk</b> (08/2015 – 11/2017) United States Army
-          <li> Performed record keeping, organization, preservation and distribution of sensitive documents that included financial, personal, and medical information pertaining to federal military officials. </li>
-
-          <br>
-
-          <b>ASIST instructor </b>(02/2016 – 02/2018) United States Army, USA
-          <li> Organized and supervised Applied Suicide Intervention Skills Training (ASIST) workshop, resulting in over 121 medical professionals being certified in suicide first-aid skills. </li>
-        </div>
-        <br>
-        <br>
-
-        <div class="content" section id="accolades">
-          <h3> Accolades: </h3>
-
-          <p> <b>Military Education and Training Campus (METC)</b>, Joint Base San Antonio, Texas </p>
-          <li> Distinguished Peers award (August 2014) </li>
-          <li> Distinguished Honor Graduate Award (August 2014) </li>
-
-          <br>
-
-          <b> United State Army</b>, Joint Base Lewis-McChord, Washington
-          <li> Certificate of Achievement (August 2015) </li>
-          <li> Army Achievement Medal (May 2017) </li>
-          <li> Army Commendation Medal (November, 2017) </li>
-
-
-        </div>
-
-      </div>
-
+       
+    
 </DOCTYPE>
 
 </html>
